@@ -485,3 +485,5 @@ commandqueue[8093] = {
 commandqueue[8094] = {
     {"put", {910, 630}, "coal", 4, defines.inventory.player_main, defines.inventory.fuel}
 }
+
+return commandqueue
