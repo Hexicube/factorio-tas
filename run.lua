@@ -1,6 +1,14 @@
 --Map: >>>AAAOABYAAAABAAYAAAAEAAAAY29hbAUDBQoAAABjb3BwZXItb3JlAQUFCQAAAGNydWRlLW9pbAUFBQoAAABlbmVteS1iYXNlBAMFCAAAAGlyb24tb3JlAQUFBQAAAHN0b25lBQEFSmXWRYCEHgBSAQAAAQHGdvJh<<<
 
 local commandqueue = {}
+
+
+commandqueue["settings"] = {
+    debugmode = false,
+    allowspeed = true
+}
+
+
 commandqueue[1] = {
     {"craft", "iron-axe", 1}
 }

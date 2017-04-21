@@ -1,5 +1,8 @@
 local commandqueue = require("run")
 
+local debugmode = commandqueue.settings.debugmode
+local allowspeed = commandqueue.settings.allowspeed
+
 local myplayer = nil
 local curtick = 0
 local walkstate = {walking = false}
@@ -19,19 +22,17 @@ directions["SW"] = {walking = true, direction = defines.direction.southwest}
 script.on_event(defines.events.on_tick, function(event)
     curtick = curtick + 1
     if commandqueue[curtick] then
-	local printstring = "Action: "
+        local printstring = "Action: "
         for k,v in pairs(commandqueue[curtick]) do
-	    
-
             if v[1] == "move" then
                 walkstate = directions[v[2]]
-		printstring = printstring .. "Walking " .. v[2] .. " "
+                printstring = printstring .. "Walking " .. v[2] .. " "
             elseif v[1] == "mine" then
                 minestate = v[2]
-		printstring = printstring .. "Mining "
+                printstring = printstring .. "Mining "
             elseif v[1] == "craft" then
                 myplayer.begin_crafting{recipe = v[2], count = v[3] or 1}
-		printstring = printstring .. "Crafting: " .. v[2] .. " " .. "Count: " .. v[3] .. " "
+                printstring = printstring .. "Crafting: " .. v[2] .. " " .. "Count: " .. v[3] .. " "
             elseif v[1] == "stopcraft" then
                 myplayer.cancel_crafting{index = v[2], count = v[3] or 1}
             elseif v[1] == "build" then
@@ -47,7 +48,7 @@ script.on_event(defines.events.on_tick, function(event)
                     myplayer.build_from_cursor()
                     myplayer.clean_cursor()
                 end
-		printstring = printstring .. "Building: " .. v[3] .. " "
+                printstring = printstring .. "Building: " .. v[3] .. " "
             elseif v[1] == "put" then
                 --myplayer.update_selected_entity(v[2])
                 myplayer.cursor_position = v[2]
@@ -61,7 +62,7 @@ script.on_event(defines.events.on_tick, function(event)
                     if avail < amt then amt = avail end
                     local amt = otherinv.insert{name=v[3], count=amt}
                     playerinv.remove{name=v[3], count=amt}
-		    printstring = printstring .. "Putting: " .. v[3] .. " " .. "Count: " .. amt .. " "
+                    printstring = printstring .. "Putting: " .. v[3] .. " " .. "Count: " .. amt .. " "
                 end
             elseif v[1] == "take" then
                 --myplayer.update_selected_entity(v[2])
@@ -76,20 +77,22 @@ script.on_event(defines.events.on_tick, function(event)
                     if avail < amt then amt = avail end
                     local amt = playerinv.insert{name=v[3], count=amt}
                     otherinv.remove{name=v[3], count=amt}
-		    printstring = printstring .. "Taking: " .. v[3] .. " " .. "Count: " .. amt .. " "
+                    printstring = printstring .. "Taking: " .. v[3] .. " " .. "Count: " .. amt .. " "
                 end
-	    elseif v[1] == "tech" then
-		myplayer.force.current_research = v[2]
-		printstring = printstring .. "Researching: " .. v[2] .. " "
-	    elseif v[1] == "speed" then
-		game.speed = v[2]
-		printstring = printstring .. "Setting Game Speed: " .. v[2] .. " "
-	    elseif v[1] == "recipe" then
-		myplayer.cursor_position = v[2]
-		myplayer.selected.recipe = v[3]
-		printstring = printstring .. "Setting Recipe: " .. v[3] .. " "
+            elseif v[1] == "tech" then
+                myplayer.force.current_research = v[2]
+                printstring = printstring .. "Researching: " .. v[2] .. " "
+            elseif v[1] == "speed" then
+                if allowspeed then game.speed = v[2] end
+                printstring = printstring .. "Setting Game Speed: " .. v[2] .. " "
+            elseif v[1] == "recipe" then
+                myplayer.cursor_position = v[2]
+                myplayer.selected.recipe = v[3]
+                printstring = printstring .. "Setting Recipe: " .. v[3] .. " "
+            elseif v[1] == "print" then
+                myplayer.print(v[2])
             end
-	    myplayer.print(printstring)
+            if debugmode then myplayer.print(printstring) end
         end
     end
     myplayer.walking_state = walkstate
