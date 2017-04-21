@@ -15,9 +15,6 @@ commandqueue[1] = {
 commandqueue[2] = {
     {"move", "SE"}
 }
-commandqueue[3] = {
-    {"speed", 20}
-}
 commandqueue[12] = {
     {"move", "E"}
 }
@@ -421,9 +418,6 @@ commandqueue[7355] = {
 commandqueue[7565] = {
     {"mine", nil},
     {"move", "S"}
-}
-commandqueue[7566] = {
-    {"speed", 1}
 }
 commandqueue[7635] = {
     {"move", "STOP"}
