@@ -11,506 +11,384 @@ commandqueue["settings"] = {
 
 
 commandqueue[1] = {
-    {"craft", "iron-axe", 1}
-}
-commandqueue[2] = {
+    {"craft", "iron-axe", 1},
     {"move", "SE"}
 }
-commandqueue[12] = {
+commandqueue[11] = {
     {"move", "E"}
 }
-commandqueue[66] = {
-    {"move", "STOP"}
+commandqueue[12] = {
+    {"speed", 10}
 }
-commandqueue[67] = {
+commandqueue[66] = {
+    {"move", "STOP"},
     {"mine", {11, 3}}
 }
 commandqueue[120] = {
-    {"mine", nil}
-}
-commandqueue[121] = {
+    {"mine", nil},
     {"move", "W"}
 }
-commandqueue[180] = {
+commandqueue[157] = {
+    {"move", "SW"}
+}
+commandqueue[185] = {
     {"move", "S"}
 }
-commandqueue[232] = {
+commandqueue[222] = {
     {"move", "SE"}
 }
-commandqueue[260] = {
-    {"move", "STOP"}
-}
-commandqueue[261] = {
+commandqueue[240] = {
+    {"move", "STOP"},
     {"mine", {5, 12}}
 }
-commandqueue[316] = {
-    {"mine", nil}
-}
-commandqueue[317] = {
+commandqueue[296] = {
+    {"mine", nil},
     {"move", "NW"}
 }
 commandqueue[326] = {
     {"craft", "wooden-chest", 1}
 }
-commandqueue[532] = {
+commandqueue[505] = {
     {"move", "N"}
 }
-commandqueue[542] = {
-    {"move", "STOP"}
-}
-commandqueue[543] = {
+commandqueue[517] = {
+    {"move", "STOP"},
     {"build", defines.inventory.player_quickbar, "burner-mining-drill", {845, 527}}
 }
-commandqueue[544] = {
+commandqueue[518] = {
     {"put", {-23, -12}, "raw-wood", 1, defines.inventory.player_main, defines.inventory.fuel}
 }
-commandqueue[545] = {
+commandqueue[519] = {
     {"build", defines.inventory.player_quickbar, "stone-furnace", {845, 460}}
 }
-commandqueue[546] = {
-    {"put", {-23, -14}, "raw-wood", 1, defines.inventory.player_main, defines.inventory.fuel, }
+commandqueue[520] = {
+    {"put", {-23, -14}, "raw-wood", 1, defines.inventory.player_main, defines.inventory.fuel}
 }
-commandqueue[547] = {
+commandqueue[521] = {
     {"build", defines.inventory.player_quickbar, "wooden-chest", {1010, 450}}
 }
-commandqueue[548] = {
+commandqueue[522] = {
     {"mine", {-18, -12}}
 }
 commandqueue[676] = {
     {"tech", "automation"}
 }
-commandqueue[1052] = {
-    {"mine", nil}
-}
-commandqueue[1054] = {
+commandqueue[1026] = {
+    {"mine", nil},
     {"put", {-23, -12}, "coal", 4, defines.inventory.player_main, defines.inventory.fuel}
 }
-commandqueue[1055] = {
+commandqueue[1027] = {
     {"mine", {-18, -12}}
 }
-commandqueue[1558] = {
-    {"mine", nil}
-}
-commandqueue[1560] = {
-    {"put", {-23, -14}, "coal", 3, defines.inventory.player_main, defines.inventory.fuel}
-}
-commandqueue[1561] = {
+commandqueue[1530] = {
+    {"mine", nil},
+    {"put", {-23, -14}, "coal", 3, defines.inventory.player_main, defines.inventory.fuel},
     {"move", "S"}
 }
-commandqueue[1630] = {
-    {"move", "STOP"}
-}
-commandqueue[1631] = {
+commandqueue[1600] = {
+    {"move", "STOP"},
     {"mine", {-20, 0}}
 }
-commandqueue[2116] = {
-    {"mine", nil}
-}
-commandqueue[2117] = {
-    {"craft", "stone-furnace", 1}
-}
-commandqueue[2118] = {
+commandqueue[2085] = {
+    {"mine", nil},
+    {"craft", "stone-furnace", 1},
     {"move", "N"}
 }
-commandqueue[2119] = {
+commandqueue[2086] = {
     {"craft", "iron-gear-wheel", 1}
 }
-commandqueue[2187] = {
-    {"move", "STOP"}
-}
-commandqueue[2189] = {
+commandqueue[2155] = {
+    {"move", "STOP"},
     {"take", {-23, -14}, "iron-plate", 5, defines.inventory.player_main, defines.inventory.furnace_result}
 }
-commandqueue[2190] = {
-    {"craft", "burner-mining-drill", 1}
-}
-commandqueue[2191] = {
+commandqueue[2156] = {
+    {"craft", "burner-mining-drill", 1},
     {"mine", {-18, -13}}
 }
-commandqueue[2451] = {
-    {"mine", nil}
-}
-commandqueue[2452] = {
+commandqueue[2417] = {
+    {"mine", nil},
     {"build", defines.inventory.player_quickbar, "burner-mining-drill", {1039, 502}}
 }
-commandqueue[2453] = {
-    {"put", {-17, -13}, "coal", 3, defines.inventory.player_main, defines.inventory.fuel}
-}
-commandqueue[2454] = {
+commandqueue[2418] = {
+    {"put", {-17, -13}, "coal", 3, defines.inventory.player_main, defines.inventory.fuel},
     {"move", "NW"}
 }
-commandqueue[3074] = {
+commandqueue[3038] = {
     {"move", "W"}
 }
-commandqueue[3174] = {
-    {"move", "STOP"}
-}
-commandqueue[3175] = {
+commandqueue[3138] = {
+    {"move", "STOP"},
     {"mine", {-103, -80}}
 }
-commandqueue[3580] = {
-    {"mine", nil}
-}
-commandqueue[3581] = {
+commandqueue[3543] = {
+    {"mine", nil},
     {"move", "SW"}
 }
-commandqueue[3751] = {
+commandqueue[3713] = {
     {"move", "W"}
 }
-commandqueue[3821] = {
-    {"move", "STOP"}
-}
-commandqueue[3822] = {
+commandqueue[3783] = {
+    {"move", "STOP"},
     {"mine", {-132, -59}}
 }
-commandqueue[4227] = {
-    {"mine", nil}
-}
-commandqueue[4228] = {
+commandqueue[4188] = {
+    {"mine", nil},
     {"move", "S"}
 }
-commandqueue[4360] = {
-    {"move", "STOP"}
-}
-commandqueue[4361] = {
+commandqueue[4320] = {
+    {"move", "STOP"},
     {"mine", {-129, -39}}
 }
-commandqueue[4413] = {
-    {"mine", nil}
-}
-commandqueue[4414] = {
+commandqueue[4372] = {
+    {"mine", nil},
     {"move", "E"}
 }
-commandqueue[4474] = {
-    {"move", "STOP"}
-}
-commandqueue[4475] = {
+commandqueue[4432] = {
+    {"move", "STOP"},
     {"mine", {-122, -42}}
 }
-commandqueue[4528] = {
-    {"mine", nil}
-}
-commandqueue[4529] = {
+commandqueue[4485] = {
+    {"mine", nil},
     {"move", "S"}
 }
-commandqueue[4559] = {
-    {"move", "STOP"}
-}
-commandqueue[4560] = {
+commandqueue[4515] = {
+    {"move", "STOP"},
     {"mine", {-118, -35}}
 }
-commandqueue[4613] = {
-    {"mine", nil}
-}
-commandqueue[4612] = {
-    {"craft", "stone-furnace", 8}
-}
-commandqueue[4614] = {
+commandqueue[4568] = {
+    {"mine", nil},
+    {"craft", "stone-furnace", 8},
     {"move", "E"}
 }
-commandqueue[5114] = {
+commandqueue[5067] = {
     {"move", "SE"}
 }
-commandqueue[5356] = {
-    {"move", "STOP"}
-}
-commandqueue[5357] = {
+commandqueue[5309] = {
+    {"move", "STOP"},
     {"build", defines.inventory.player_quickbar, "stone-furnace", {770, 460}}
 }
-commandqueue[5359] = {
-    {"take", {-23, -14}, "iron-plate", 15, defines.inventory.player_main, defines.inventory.furnace_result},
+commandqueue[5310] = {
+    {"take", {-23, -14}, "iron-plate", 16, defines.inventory.player_main, defines.inventory.furnace_result},
 }
-commandqueue[5360] = {
-    {"take", {-18, -15}, "coal", 12, defines.inventory.player_main, defines.inventory.chest}
-}
-commandqueue[5362] = {
+commandqueue[5311] = {
+    {"take", {-18, -15}, "coal", 12, defines.inventory.player_main, defines.inventory.chest},
     {"craft", "burner-mining-drill", 1}
 }
-commandqueue[5363] = {
-    {"mine", {-18, -12}}
-}
-commandqueue[5364] = {
+commandqueue[5312] = {
+    {"mine", {-18, -12}},
     {"craft", "iron-gear-wheel", 3}
 }
-commandqueue[5581] = {
-    {"mine", nil}
-}
-commandqueue[5582] = {
+commandqueue[5531] = {
+    {"mine", nil},
     {"build", defines.inventory.player_quickbar, "burner-mining-drill", {770, 500}}
 }
-commandqueue[5583] = {
+commandqueue[5532] = {
     {"put", {-25, -12}, "coal", 4, defines.inventory.player_main, defines.inventory.fuel}
 }
-commandqueue[5585] = {
+commandqueue[5533] = {
     {"put", {-25, -14}, "coal", 4, defines.inventory.player_main, defines.inventory.fuel}
 }
-commandqueue[5586] = {
+commandqueue[5534] = {
     {"mine", {-18, -12}}
 }
-commandqueue[5704] = {
-    {"mine", nil}
-}
 commandqueue[5706] = {
-    {"take", {-23, -14}, "iron-plate", 3, defines.inventory.player_main, defines.inventory.furnace_result}
+    {"take", {-23, -14}, "iron-plate", 4, defines.inventory.player_main, defines.inventory.furnace_result}
 }
 commandqueue[5707] = {
     {"craft", "burner-mining-drill", 1}
 }
-commandqueue[5708] = {
-    {"mine", {-18, -12}}
-}
-commandqueue[5915] = {
+commandqueue[5858] = {
     {"mine", nil}
 }
-commandqueue[5917] = {
+commandqueue[5860] = {
     {"take", {-18, -15}, "coal", 12, defines.inventory.player_main, defines.inventory.chest}
 }
-commandqueue[5919] = {
+commandqueue[5861] = {
     {"put", {-17, -13}, "coal", 2, defines.inventory.player_main, defines.inventory.fuel}
 }
-commandqueue[5921] = {
-    {"put", {-23, -12}, "coal", 2, defines.inventory.player_main, defines.inventory.fuel}
-}
-commandqueue[5922] = {
+commandqueue[5862] = {
+    {"put", {-23, -12}, "coal", 2, defines.inventory.player_main, defines.inventory.fuel},
     {"move", "W"}
 }
-commandqueue[5932] = {
+commandqueue[5872] = {
     {"move", "STOP"}
 }
-commandqueue[5933] = {
-    {"build", defines.inventory.player_quickbar, "burner-mining-drill", {760, 500}}
-}
-commandqueue[5934] = {
-    {"put", {-27, -12}, "coal", 3, defines.inventory.player_main, defines.inventory.fuel}
-}
-commandqueue[5935] = {
+commandqueue[5873] = {
     {"build", defines.inventory.player_quickbar, "stone-furnace", {760, 460}}
 }
-commandqueue[5936] = {
+commandqueue[5874] = {
+    {"build", defines.inventory.player_quickbar, "burner-mining-drill", {760, 500}}
+}
+commandqueue[5875] = {
+    {"move", "E"},
+    {"put", {-27, -12}, "coal", 3, defines.inventory.player_main, defines.inventory.fuel}
+}
+commandqueue[5876] = {
     {"put", {-27, -14}, "coal", 3, defines.inventory.player_main, defines.inventory.fuel}
 }
-commandqueue[5937] = {
-    {"move", "E"}
-}
-commandqueue[5947] = {
-    {"move", "STOP"}
-}
-commandqueue[5948] = {
+commandqueue[5885] = {
+    {"move", "STOP"},
     {"mine", {-18, -12}}
 }
-commandqueue[6578] = {
-    {"mine", nil}
-}
-commandqueue[6579] = {
+commandqueue[6485] = {
+    {"mine", nil},
     {"move", "W"}
 }
-commandqueue[6590] = {
-    {"move", "STOP"}
-}
-commandqueue[6592] = {
+commandqueue[6495] = {
+    {"move", "STOP"},
     {"take", {-27, -14}, "iron-plate", 3, defines.inventory.player_main, defines.inventory.furnace_result}
 }
-commandqueue[6594] = {
+commandqueue[6494] = {
     {"take", {-25, -14}, "iron-plate", 3, defines.inventory.player_main, defines.inventory.furnace_result}
 }
-commandqueue[6596] = {
+commandqueue[6496] = {
     {"take", {-23, -14}, "iron-plate", 4, defines.inventory.player_main, defines.inventory.furnace_result}
 }
-commandqueue[6597] = {
-    {"craft", "burner-mining-drill", 1}
-}
-commandqueue[6598] = {
+commandqueue[6497] = {
+    {"craft", "iron-gear-wheel", 3},
     {"move", "E"}
 }
-commandqueue[6608] = {
-    {"move", "STOP"}
-}
-commandqueue[6609] = {
+commandqueue[6507] = {
+    {"move", "STOP"},
     {"mine", {-18, -12}}
 }
-commandqueue[6664] = {
+commandqueue[6582] = {
     {"mine", {-18, -15}}
 }
-commandqueue[6814] = {
-    {"mine", nil}
-}
-commandqueue[6815] = {
-    {"build",  defines.inventory.player_quickbar, "burner-mining-drill", {1030, 420}, 2}
-}
-commandqueue[6816] = {
-    {"mine", {-18, -12}}
-}
-commandqueue[7326] = {
-    {"mine", nil}
-}
-commandqueue[7327] = {
-    {"move", "W"}
-}
-commandqueue[7337] = {
-    {"move", "STOP"}
-}
-commandqueue[7339] = {
-    {"take", {-27, -14}, "iron-plate", 3, defines.inventory.player_main, defines.inventory.furnace_result}
-}
-commandqueue[7341] = {
+commandqueue[6610] = {
     {"take", {-25, -14}, "iron-plate", 3, defines.inventory.player_main, defines.inventory.furnace_result}
 }
-commandqueue[7343] = {
-    {"take", {-23, -14}, "iron-plate", 4, defines.inventory.player_main, defines.inventory.furnace_result}
+commandqueue[6611] = {
+    {"take", {-23, -14}, "iron-plate", 4, defines.inventory.player_main, defines.inventory.furnace_result}, 
+    {"craft", "burner-mining-drill", 1}
 }
-commandqueue[7344] = {
-    {"craft", "burner-mining-drill", 1},
-    {"move", "E"}
+commandqueue[6732] = {
+    {"build",  defines.inventory.player_quickbar, "burner-mining-drill", {1030, 420}, 2}
 }
-commandqueue[7354] = {
-    {"move", "STOP"}
-}
-commandqueue[7355] = {
+commandqueue[6703] = {
     {"mine", {-18, -12}}
 }
-commandqueue[7565] = {
+commandqueue[7223] = {
+    {"mine", nil},
+    {"move", "W"}
+}
+commandqueue[7233] = {
+    {"move", "STOP"},
+    {"take", {-27, -14}, "iron-plate", 3, defines.inventory.player_main, defines.inventory.furnace_result}
+}
+commandqueue[7234] = {
+    {"take", {-25, -14}, "iron-plate", 3, defines.inventory.player_main, defines.inventory.furnace_result}
+}
+commandqueue[7235] = {
+    {"take", {-23, -14}, "iron-plate", 4, defines.inventory.player_main, defines.inventory.furnace_result}
+}
+commandqueue[7236] = {
+    {"craft", "iron-gear-wheel", 3},
+    {"move", "E"}
+}
+commandqueue[7246] = {
+    {"move", "STOP"},
+    {"mine", {-18, -12}}
+}
+commandqueue[7400] = {
+    {"take", {-23, -14}, "iron-plate", 4, defines.inventory.player_main, defines.inventory.furnace_result}
+}
+commandqueue[7456] = {
     {"mine", nil},
     {"move", "S"}
 }
-commandqueue[7635] = {
+commandqueue[7401] = {
+    {"craft", "burner-mining-drill", 1}
+}
+commandqueue[7526] = {
     {"move", "STOP"}
 }
-commandqueue[7636] = {
+commandqueue[7527] = {
     {"build", defines.inventory.player_quickbar, "burner-mining-drill", {1000, 600}, 1}
 }
-commandqueue[7637] = {
+commandqueue[7528] = {
     {"put", {-18, 1}, "coal", 4, defines.inventory.player_main, defines.inventory.fuel}
 }
-commandqueue[7638] = {
-    {"build", defines.inventory.player_quickbar, "wooden-chest", {960, 600}}
-}
-commandqueue[7639] = {
+commandqueue[7529] = {
+    {"build", defines.inventory.player_quickbar, "wooden-chest", {960, 600}},
     {"move", "N"}
 }
-commandqueue[7709] = {
-    {"move", "STOP"}
-}
-commandqueue[7710] = {
+commandqueue[7599] = {
+    {"move", "STOP"},
     {"mine", {-18, -12}}
 }
-commandqueue[7860] = {
+commandqueue[7749] = {
     {"mine", nil},
     {"move", "W"}
 }
-commandqueue[7870] = {
-    {"move", "STOP"}
-}
-commandqueue[7872] = {
+commandqueue[7759] = {
+    {"move", "STOP"},
     {"take", {-27, -14}, "iron-plate", 4, defines.inventory.player_main, defines.inventory.furnace_result}
 }
-commandqueue[7874] = {
+commandqueue[7760] = {
     {"take", {-25, -14}, "iron-plate", 4, defines.inventory.player_main, defines.inventory.furnace_result}
 }
-commandqueue[7876] = {
+commandqueue[7761] = {
     {"take", {-23, -14}, "iron-plate", 4, defines.inventory.player_main, defines.inventory.furnace_result}
 }
-commandqueue[7877] = {
-    {"craft", "burner-mining-drill", 1},
-    {"move", "E"}
+commandqueue[7762] = {
+    {"craft", "iron-gear-wheel", 3},
 }
-commandqueue[7887] = {
+commandqueue[7980] = {
+    {"take", {-25, -14}, "iron-plate", 4, defines.inventory.player_main, defines.inventory.furnace_result}
+}
+commandqueue[7981] = {
+    {"take", {-23, -14}, "iron-plate", 4, defines.inventory.player_main, defines.inventory.furnace_result}
+}
+commandqueue[7970] = {
+    {"speed", 1}
+}
+commandqueue[7982] = {
+    {"craft", "burner-mining-drill", 1}, 
+    {"mine", nil},
     {"move", "S"}
 }
-commandqueue[7957] = {
-    {"move", "STOP"}
+commandqueue[8052] = {
+    {"move", "STOP"},
+    {"mine", {-20, 0}}
 }
-commandqueue[7958] = {
-    {"mine", {-20, 0.0}}
+commandqueue[8192] = {
+    {"build", defines.inventory.player_quickbar, "burner-mining-drill", {956, 620}, 2}
 }
-commandqueue[8092] = {
-    {"mine", nil}
-}
-commandqueue[8093] = {
-    {"build", defines.inventory.player_quickbar, "burner-mining-drill", {910, 630}, 2}
-}
-commandqueue[8094] = {
+commandqueue[8193] = {
     {"put", {-21, 2}, "coal", 4, defines.inventory.player_main, defines.inventory.fuel}
 }
-commandqueue[8095] = {
-    {"mine", {-20, 0.0}}
-}
-commandqueue[8195] = {
-    {"mine", nil}
-}
-commandqueue[8197] = {
+commandqueue[8194] = {
+    {"mine", nil},
     {"take", {-19.5, 1.5}, "stone", 4, defines.inventory.player_main, defines.inventory.chest}
 }
-commandqueue[8198] = {
-    {"craft", "stone-furnace", 1},
-    {"move", "N"}
+commandqueue[8195] = {
+    {"move", "N"},
+    {"craft", "stone-furnace", 1}
 }
-commandqueue[8268] = {
-    {"move", "W"}
-}
-commandqueue[8278] = {
-    {"move", "STOP"}
-}
-commandqueue[8280] = {
-    {"put", {-27, -12}, "coal", 4, defines.inventory.player_main, defines.inventory.fuel}
-}
-commandqueue[8282] = {
-    {"put", {-27, -14}, "coal", 1, defines.inventory.player_main, defines.inventory.fuel}
-}
-commandqueue[8283] = {
-    {"take", {-27, -14}, "iron-plate", 4, defines.inventory.player_main, defines.inventory.furnace_result}
-}
-commandqueue[8285] = {
-    {"put", {-25, -14}, "coal", 1, defines.inventory.player_main, defines.inventory.fuel}
-}
-commandqueue[8286] = {
-    {"take", {-25, -14}, "iron-plate", 4, defines.inventory.player_main, defines.inventory.furnace_result}
-}
-commandqueue[8288] = {
-    {"put", {-23, -14}, "coal", 1, defines.inventory.player_main, defines.inventory.fuel}
-}
-commandqueue[8289] = {
-    {"take", {-23, -14}, "iron-plate", 4, defines.inventory.player_main, defines.inventory.furnace_result}
-}
-commandqueue[8290] = {
-    {"craft", "iron-axe", 1},
-    {"take", {-17, -15}, "coal", 9, defines.inventory.player_main, defines.inventory.fuel}
-}
-commandqueue[8293] = {
-    {"take", {-17, -13}, "coal", 9, defines.inventory.player_main, defines.inventory.fuel}
-}
-commandqueue[8294] = {
+commandqueue[8265] = {
     {"move", "S"}
 }
-commandqueue[8304] = {
-    {"move", "W"}
+commandqueue[8266] = {
+    {"take", {-18, -15}, "coal", 10, defines.inventory.player_main, defines.inventory.fuel}
 }
-commandqueue[8324] = {
-    {"move", "STOP"}
+commandqueue[8267] = {
+    {"take", {-18, -13}, "coal", 10, defines.inventory.player_main, defines.inventory.fuel}
 }
-commandqueue[8325] = {
-    {"mine", {-26, -11}}
-}
-commandqueue[8835] = {
-    {"mine", nil},
-    {"build", defines.inventory.player_quickbar, "stone-furnace", {790, 410}}
-}
-commandqueue[8836] = {
-    {"put", {-29, -14}, "coal", 1, defines.inventory.player_main, defines.inventory.fuel}
-}
-commandqueue[8837] = {
-    {"put", {-29, -14}, "iron-ore", 4, defines.inventory.player_main, defines.inventory.furnace_source}
-}
-commandqueue[8839] = {
+commandqueue[8268] = {
     {"take", {-27, -14}, "iron-plate", 4, defines.inventory.player_main, defines.inventory.furnace_result}
 }
-commandqueue[8841] = {
+commandqueue[8269] = {
     {"take", {-25, -14}, "iron-plate", 4, defines.inventory.player_main, defines.inventory.furnace_result}
 }
-commandqueue[8843] = {
+commandqueue[8270] = {
     {"take", {-23, -14}, "iron-plate", 4, defines.inventory.player_main, defines.inventory.furnace_result}
 }
-commandqueue[8844] = {
-    {"craft", "burner-mining-drill", 1}
+commandqueue[8275] = {
+    {"move", "W"}
+}
+commandqueue[8295] = {
+    {"move", "STOP"}
 }
 
 return commandqueue
